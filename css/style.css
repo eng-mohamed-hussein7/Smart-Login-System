@@ -1,0 +1,280 @@
+/***********************************************  set particles-js to be in the background  ***********************************************/
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/***********************************************  start body style  ***********************************************/
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background: rgb(0, 0, 0);
+}
+body header,
+body main {
+  z-index: 55;
+}
+/***********************************************  end body style  ***********************************************/
+/***********************************************  start global style  ***********************************************/
+::selection {
+  color: rgba(0, 0, 0, 0.493);
+  background-color: #d1d1d1;
+}
+/***********************************************  end global style  ***********************************************/
+/***********************************************  start form style  ***********************************************/
+main section .container .row,
+.form-shadow {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 8px 24px rgba(0, 212, 255, 0.4),
+    inset 0 0 16px rgba(0, 212, 255, 0.2);
+
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  transform-style: preserve-3d;
+  animation: formEntrance 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+  opacity: 0;
+  transform: rotateX(20deg) translateY(100px);
+}
+
+@keyframes formEntrance {
+  0% {
+    opacity: 0;
+    transform: rotateX(20deg) translateY(100px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg) translateY(0);
+  }
+}
+
+h1,
+.logo {
+  color: #00d4ff;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+  animation: glow 2s infinite alternate;
+  margin-bottom: 20px;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px rgba(0, 212, 255, 0.5);
+  }
+  to {
+    text-shadow: 0 0 15px rgba(0, 212, 255, 0.8);
+  }
+}
+
+.form-control:focus {
+  color: #00d4ff;
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  border-bottom: #00d4ff solid 1px;
+}
+.form-control {
+  color: #00d4ff;
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom: #00d4ff solid 1px;
+}
+.form-floating > label {
+  color: rgba(0, 212, 255, 0.7);
+}
+.glow-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 212, 255, 0.5),
+    #00d4ff,
+    rgba(0, 212, 255, 0.5),
+    transparent
+  );
+  transition: 0.4s;
+  z-index: 0;
+}
+.form-control:focus ~ .glow-line {
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.7);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.my-btn {
+  width: 100%;
+  padding: 12px 0;
+  background: #000;
+  border: 1px solid #00d4ff;
+  border-radius: 25px;
+  color: #00d4ff;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+  transform: translateZ(20px);
+  font-family: "Cinzel", serif;
+  margin-bottom: 10px;
+}
+
+.my-btn span {
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.btn-glow {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 212, 255, 0.2),
+    rgba(0, 212, 255, 0.3),
+    rgba(0, 212, 255, 0.2),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.my-btn:hover .btn-glow {
+  left: 100%;
+}
+
+.my-btn:hover {
+  background: rgba(0, 212, 255, 0.1);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.5),
+    inset 0 0 10px rgba(0, 212, 255, 0.3);
+  transform: translateZ(20px) scale(1.05);
+}
+
+.my-btn:hover span {
+  text-shadow: 0 0 5px rgba(0, 212, 255, 0.7);
+}
+
+.my-btn:active {
+  transform: translateZ(20px) scale(0.98);
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+  color: rgba(0, 212, 255, 0.7);
+  font-size: 13px;
+}
+
+.signup-link a {
+  color: #00d4ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+  position: relative;
+}
+
+.signup-link a:hover {
+  text-shadow: 0 0 5px rgba(0, 212, 255, 0.7);
+}
+
+.signup-link a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: #00d4ff;
+  transition: 0.3s;
+}
+
+.signup-link a:hover::after {
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0, 212, 255, 0.7);
+}
+/***********************************************  end form style  ***********************************************/
+
+/***********************************************  Start validation style  ***********************************************/
+.form-control.is-invalid {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+.form-control.is-invalid:focus {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  box-shadow: none;
+}
+
+.glow-line-invalid {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(234, 134, 143, 0.5),
+    #ea868f,
+    rgba(234, 134, 143, 0.5),
+    transparent
+  );
+  transition: 0.4s;
+  z-index: 0;
+}
+.form-control:focus ~ .glow-line-invalid {
+  width: 100%;
+  box-shadow: 0 0 10px rgba(234, 134, 143, 0.7);
+  animation: shimmer 2s infinite;
+}
+/***********************************************   end validation style   ***********************************************/
+
+/***********************************************  change theme button   ***********************************************/
+.themes {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #00d4ff;
+  color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+a:hover.themes {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+}

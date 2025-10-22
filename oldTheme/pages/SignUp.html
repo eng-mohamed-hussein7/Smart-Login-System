@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <!--& ==================   start style tags ================== &-->
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <!--& ==================    end style tags  ================== &-->
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!--& ==================  start form tags ================== &-->
+    <section>
+      <div class="container py-5">
+        <div class="row my-shadow p-5 w-75 text-center mx-auto">
+          <h1>Smart Login System</h1>
+          <form>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Enter your password"
+              />
+            </div>
+            <div id="validation"></div>
+            <div>
+              <button
+                class="btn btn-outline-info w-100 my-3"
+                id="signUP"
+                type="submit"
+              >
+                Sign UP
+              </button>
+            </div>
+            <p>You have an account? <a href="../index.html">Signin</a></p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!--& ==================   end form tags  ================== &-->
+    <!--& ==================   Change the theme ================== &-->
+    <a href="../pages/SignUp.html" class="btn themes"
+      ><i class="fa-solid fa-palette"></i
+    ></a>
+    <!--& ==================   end form tags  ================== &-->
+    <!--& ==================   bootstrap JS Libaray ================== &-->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!--& ==================   start JS  ================== &-->
+    <script src="../js/main.js"></script>
+    <script src="../js/singup.js"></script>
+    <!--& ==================   end JS  ================== &-->
+  </body>
+</html>

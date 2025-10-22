@@ -1,0 +1,78 @@
+/*********************************************** Start global style ***********************************************/
+@font-face {
+  font-family: TitilliumWeb-Regular;
+  src: url(./fonts/TitilliumWeb-Regular.ttf);
+}
+@font-face {
+  font-family: TitilliumWeb-Light;
+  src: url(./fonts/TitilliumWeb-Light.ttf);
+}
+
+body {
+  background-color: #24353f;
+  color: #fff;
+  font-family: TitilliumWeb-Light, sans-serif;
+}
+/*********************************************** end global style ***********************************************/
+/*********************************************** Start Form style ***********************************************/
+
+h1 {
+  color: #17a2b8;
+  font-family: TitilliumWeb-Regular, sans-serif;
+}
+
+.form-control:focus,
+.form-control {
+  background-color: transparent;
+  color: #fff;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+input::placeholder {
+  color: #b6b6b6 !important;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.my-shadow {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/***********************************************  end Form style  ***********************************************/
+/***********************************************  Start Home style   ***********************************************/
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.btn-outline-info {
+  --bs-btn-hover-color: #fff;
+}
+
+/***********************************************  change theme button   ***********************************************/
+.themes {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #00d4ff;
+  color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+a:hover.themes {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+}

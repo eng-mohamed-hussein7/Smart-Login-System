@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <!--& ==================   start style tags ================== &-->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--& ==================   end style tags ================== &-->
+    <link
+      rel="shortcut icon"
+      href="../oldTheme/images/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!--& ==================  start form tags ================== &-->
+    <section>
+      <div class="container py-5">
+        <div class="row my-shadow p-5 w-75 text-center mx-auto">
+          <h1>Smart Login System</h1>
+          <div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter your email"
+                autocomplete="username"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Enter your password"
+                autocomplete="new-password"
+              />
+            </div>
+            <div id="validation"></div>
+            <div>
+              <button class="btn btn-outline-info w-100 my-3" id="login">
+                Login
+              </button>
+            </div>
+            <p>
+              Don’t have an account? <a href="./pages/SignUp.html"> Sign Up </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--& ==================  end form tags ================== &-->
+    <!--& ==================   Change the theme ================== &-->
+    <a href="../index.html" class="btn themes"
+      ><i class="fa-solid fa-palette"></i
+    ></a>
+    <!--& ==================   bootstrap JS Libaray ================== &-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!--& ==================   start JS  ================== &-->
+    <script src="./js/main.js"></script>
+    <script src="./js/login.js"></script>
+    <!--& ==================   end JS  ================== &-->
+  </body>
+</html>
