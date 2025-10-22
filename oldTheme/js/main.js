@@ -32,11 +32,12 @@ function login(email, password, isOldTheme) {
       if (hashPassword(password) == accounts[i].password) {
         sessionStorage.setItem("isLogin", "true");
         sessionStorage.setItem("username", `welcome ${accounts[i].name}`);
-        if (isOldTheme) {
-          window.location.href = "../../oldTheme/pages/home.html";
-        } else {
-          window.location.href = "../pages/home.html";
-        }
+        // if (isOldTheme) {
+        //   window.location.href = "../../oldTheme/pages/home.html";
+        // } else {
+        //   window.location.href = "../pages/home.html";
+        // }
+        window.location.href = "../pages/home.html";
 
         return;
       } else {
