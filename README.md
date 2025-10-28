@@ -1,16 +1,18 @@
-# 🧠 Smart Login System  
+# 🧠 Smart Login System — Assignment 11
 
-A clean and responsive **Smart Login System** built using **HTML, CSS, Bootstrap**, and **Vanilla JavaScript**.  
-This project was developed as part of the **Route Academy Front-End Course**.  
+A clean and responsive **Smart Login System** built using **HTML**, **CSS**, **Bootstrap**, and **Vanilla JavaScript**.  
+Developed as part of the **Route Academy Front-End Course**.  
 
 ---
 
 ## 🚀 Features  
-- 🔐 **Smart Login UI** with simple form validation  
-- 🎨 **Two Themes** — old & modern mode  
-- 🌌 **Animated Background** using **Particles.js**  
-- 📱 **Responsive Design** powered by **Bootstrap 5**  
-- ⚡ **Pure Vanilla JS** (no frameworks)
+- 🔐 **User Authentication:** Registration, Login & Logout  
+- 🧾 **Form Validation** with real-time error messages  
+- 🎨 **Two Themes:** Modern & Legacy (Old) mode  
+- 🌌 **Animated Background** powered by **Particles.js**  
+- 📱 **Responsive Layout** built with **Bootstrap 5**  
+- ⚡ **Pure Vanilla JavaScript** (no frameworks)  
+- 💾 Data stored locally using **LocalStorage**
 
 ---
 
@@ -19,11 +21,36 @@ This project was developed as part of the **Route Academy Front-End Course**.
 - **CSS3**  
 - **Bootstrap 5**  
 - **Vanilla JavaScript**  
-- **Particles.js**
+- **Particles.js**  
+- **LocalStorage API**
+
+---
+
+## 💡 What I Learned  
+- Implementing **client-side authentication logic** (register, login, logout)  
+- Handling **form validation** and user feedback  
+- Managing data with **LocalStorage**  
+- Working with **Particles.js** for visual effects  
+- Applying theme switching and maintaining state  
 
 ---
 
 ## 🧩 How to Use  
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/eng-mohamed-hussein7/Smart-Login-System.git
+   git clone https://github.com/eng-mohamed-hussein7/route-frontend-assignment-11-smart-login-system.git
+   ```  
+2. Open the project folder and run `index.html` in your browser.  
+
+---
+
+## 🎨 Live Demo  
+
+| Version | Link |
+|----------|------|
+| 🆕 **Modern Design (Current)** | 🔗 [Open Live Demo](https://eng-mohamed-hussein7.github.io/route-frontend-assignment-11-smart-login-system/) |
+| 🕰️ **Old Design (Legacy)** | 🔗 [Open Old Version](https://eng-mohamed-hussein7.github.io/route-frontend-assignment-11-smart-login-system/oldTheme/index.html) |
+
+---
+
+🧑‍💻 Built with ❤️ as part of the **Route Academy Front-End JavaScript Track**
